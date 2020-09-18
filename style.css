@@ -1,0 +1,119 @@
+
+/* General Seetings */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    width: 100%;
+    
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+/* Text settings */
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+}
+
+a,
+h4 {
+    font-family: 'PT Serif', serif;
+}
+
+h2,
+h3,
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 0.875rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 0.875rem;
+    font-style: normal;
+    writing-mode: vertical-rl;
+    top: 0;
+    right: 0;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+h2 {
+    font-size: 1.125rem;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Team section */
+
+.team {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.member {
+  
+    grid-gap: 1rem;
+}
+
+
+.member img {
+    width: 100%;
+    min-width: 100px;
+}
+
+@media (min-width: 576px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .who {
+        width: 300px;
+    }
+
+    .team {
+        padding-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .member {
+        max-width: 50%;
+    }
+
+    .member img {
+        min-width: 100px;
+    }
+}
+
+
+
+
