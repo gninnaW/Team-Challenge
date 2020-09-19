@@ -1,119 +1,96 @@
-
-/* General Seetings */
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    padding: 0;
-    margin: 0;
-    color: #333;
     width: 100%;
-    
 }
 
-.wrapper {
-    margin: 0 auto;
-}
-
-/* Text settings */
-
-a {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 2rem;
-    color: #333;
-}
-
-a,
-h4 {
-    font-family: 'PT Serif', serif;
-}
-
-h2,
-h3,
-p {
-    font-family: 'Poppins', sans-serif;
-}
-
-h2,
-h3 {
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 0.875rem;
-}
-
-h4 {
-    font-weight: 400;
-    font-size: 0.875rem;
-    font-style: normal;
-    writing-mode: vertical-rl;
-    top: 0;
-    right: 0;
-}
-
-p {
-    font-weight: 400;
-    font-size: 0.875rem;
-}
-
-h2 {
-    font-size: 1.125rem;
-}
-
-.wrapper {
+.container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Team section */
+h1,
+h3 {
+    font-family: 'PT Serif', serif;
+}
 
-.team {
+h2,
+h4,
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.25;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+h3 {
+    writing-mode: vertical-lr;
+    font-size: clamp(0.625rem, 1vw, 0.875rem);
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+h4 {
+    font-size: clamp(0.875rem, 1vw, 1.125rem);
+}
+
+h4 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.team_presentation_member {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+}
+
+.team_member {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2.5rem;
+}
+
+.member_card {
+    max-width: 300px;
+   
 }
 
 .member {
-  
-    grid-gap: 1rem;
+    display: flex;
 }
-
 
 .member img {
     width: 100%;
-    min-width: 100px;
 }
 
-@media (min-width: 576px) {
-    .header {
+@media only screen and (min-width: 600px) {
+
+    .team_presentation_text {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    .who {
-        width: 300px;
+    .introduction {
+        max-width: 300px;
     }
 
-    .team {
-        padding-top: 4rem;
+    .team_member {
+        margin-top: 2.5rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .member {
-        max-width: 50%;
-    }
-
-    .member img {
-        min-width: 100px;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2.5rem;
     }
 }
-
-
-
-
